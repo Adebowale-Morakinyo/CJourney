@@ -110,10 +110,10 @@ Feel free to revisit this guide whenever you want to relive the magic. Happy cod
 ```
 
 **Screenshots:**
-![C/C++ extension](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/setup_extension.png)
+![C/C++ extension](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlights/setup_extension.png)
 *Caption: A screenshot of a c/c++ extension installed in VScode.*
 
-![Terminal Shot](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/terminal_output.png)
+![Terminal Shot](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlights/terminal_output.png)
 *Caption: Terminal commands and outputs for compiling and running the C program.*
 
 ### Chapter 1 Highlights
