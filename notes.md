@@ -120,7 +120,7 @@ Feel free to revisit this guide whenever you want to relive the magic. Happy cod
 
 | Low-level Language | High-level language | Middle-levl Language | C Language | Requirements | Comments: Whispering to My Future Self |
 | ------------------ | -------------------- | ------------------------------ | ---------------------------------------- | -------------------- | ----------------------------- |
-| ![Low-level Language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h1.png) | ![High-level language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h2.png) | ![Middle-levl Language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h3.png) | ![C Language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h4.png) | ![Requirements](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h5.png) | - |
+| ![Low-level Language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h1.png) | ![High-level language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h2.png) | ![Middle-level Language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h3.png) | ![C Language](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h4.png) | ![Requirements](https://github.com/Adebowale-Morakinyo/CJourney/blob/main/chapter_1/Highlight/c1_h5.png) | - |
 
 ## Chapter 2: Variables and Data Types in C
 
