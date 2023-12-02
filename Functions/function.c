@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 int main(){
-    
+
     sayHi();
-    sayHello("Mike");
+    sayHello("Mike", 20);
     return 0;
 }
 
