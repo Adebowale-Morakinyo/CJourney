@@ -25,7 +25,7 @@ int main() {
     int my_arr[] = {1, 3, 4, 5, 10, 12, 15};
     int arrLength = sizeof(my_arr) / sizeof(my_arr[0]);
 
-    int targetValue = 10;
+    int targetValue = 7;
 
     if (binarySearch(my_arr, targetValue, 0, arrLength -1)) {
         printf(" Target %d found in the array\n", targetValue);
