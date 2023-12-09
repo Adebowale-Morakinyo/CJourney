@@ -1,16 +1,17 @@
 #include <stdio.h>
 
 
-int binarySearch(int arr[], int target, int start, int end) {
+int binarySearch(int arr[], int arrLength, int target) {
+    int start = 0;
+    int end = arrLength - 1;
     int mid = (start + end) / 2;
 
-    while (start <= end)
-    {
+    while (start <= end) {
         if (arr[mid] == target) {
             return mid;
 
         } else if (arr[mid] > target){
-            end = mid;
+            end = mid - 1;
 
         } else {
             start = mid + 1;
@@ -23,13 +24,13 @@ int binarySearch(int arr[], int target, int start, int end) {
 int main() {
 
     int my_arr[] = {1, 3, 4, 5, 10, 12, 15};
-    int arrLength = sizeof(my_arr) / sizeof(my_arr[0]);
-    int target_value = 10;
+    int myArrLength = sizeof(my_arr) / sizeof(my_arr[0]);
+    int targetValue = 10;
 
     int arr2[] = {1, 3, 4, 5, 10, 12, 15};
     int target2 = 2;
 
-    printf("%d\n", binarySearch(my_arr, target_value, 0, arrLength -1));
+    printf("%d", binarySearch(my_arr, myArrLength, targetValue));
 
     return 0;
 }
