@@ -10,11 +10,11 @@ int binarySearch(int arr[], int arrLength, int target) {
         if (arr[mid] == target) {
             return mid;
 
-        } else if (arr[mid] > target){
-            end = mid - 1;
+        } else if (arr[mid] > target) {
+            end = mid--;
 
         } else {
-            start = mid + 1;
+            start = mid++;
         }
     }
 
@@ -27,10 +27,7 @@ int main() {
     int myArrLength = sizeof(my_arr) / sizeof(my_arr[0]);
     int targetValue = 10;
 
-    int arr2[] = {1, 3, 4, 5, 10, 12, 15};
-    int target2 = 2;
-
-    printf("%d", binarySearch(my_arr, myArrLength, targetValue));
+    printf("Target Value, %d was found at index %d\n", targetValue, binarySearch(my_arr, myArrLength, targetValue));
 
     return 0;
 }
