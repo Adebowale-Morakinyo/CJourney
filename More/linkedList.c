@@ -20,6 +20,11 @@ struct Node* createNode(int data) {
 }
 
 // Function to insert a node at the beginning of the linked list
+struct Node* insertAtBeginning(struct Node* head, int data) {
+    struct Node* newNode = createNode(data);
+    newNode->next = head;
+    return newNode;
+}
 
 
 // Function to insert a node at the end of the linked list
