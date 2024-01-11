@@ -46,6 +46,29 @@ struct Node* insertAtEnd(struct Node* head, int data) {
 
 
 // Function to delete a node with a given value
+struct Node* deleteNode(struct Node* head, int data) {
+    struct Node *current = head, *prev = NULL;
+
+    while (current != NULL && current->data != data) {
+        prev = current;
+        current = current->next;
+    }
+
+    if (current == NULL) {
+        printf("Node not found.\n");
+        return head;
+    }
+
+    if (prev == NULL) {
+        head = current->next;
+    } else {
+        prev->next = current->next;
+    }
+
+    free(current);
+    return head;
+}
+
 
 
 // Function to print the linked list
