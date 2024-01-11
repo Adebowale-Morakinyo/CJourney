@@ -28,6 +28,21 @@ struct Node* insertAtBeginning(struct Node* head, int data) {
 
 
 // Function to insert a node at the end of the linked list
+struct Node* insertAtEnd(struct Node* head, int data) {
+    struct Node* newNode = createNode(data);
+
+    if (head == NULL) {
+        return newNode;
+    }
+
+    struct Node* temp = head;
+    while (temp->next != NULL) {
+        temp = temp->next;
+    }
+
+    temp->next = newNode;
+    return head;
+}
 
 
 // Function to delete a node with a given value
