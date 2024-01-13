@@ -72,6 +72,14 @@ struct Node* deleteNode(struct Node* head, int data) {
 
 
 // Function to print the linked list
+void printList(struct Node* head) {
+    struct Node* temp = head;
+    while (temp != NULL) {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
 
 
 // Function to free the memory allocated for the linked list
