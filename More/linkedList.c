@@ -98,10 +98,13 @@ int main() {
 
     // Insert elements at the beginning
    
-    // Print the linked list
-    
+   // Print the linked list
+    printf("Linked List: ");
+    printList(head);
 
     // Insert elements at the end
+    head = insertAtEnd(head, 4);
+    head = insertAtEnd(head, 5);
     
     // Print the linked list
     
