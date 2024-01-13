@@ -75,6 +75,15 @@ struct Node* deleteNode(struct Node* head, int data) {
 
 
 // Function to free the memory allocated for the linked list
+void freeList(struct Node* head) {
+    struct Node* temp;
+    while (head != NULL) {
+        temp = head;
+        head = head->next;
+        free(temp);
+    }
+}
+
 
 int main() {
     struct Node* head = NULL;
