@@ -110,6 +110,8 @@ int main() {
     head = insertAtEnd(head, 5);
     
     // Print the linked list
+    printf("Linked List: ");
+    printList(head);
     
 
     // Delete a node
