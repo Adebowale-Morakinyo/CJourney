@@ -97,6 +97,9 @@ int main() {
     struct Node* head = NULL;
 
     // Insert elements at the beginning
+    head = insertAtBeginning(head, 3);
+    head = insertAtBeginning(head, 2);
+    head = insertAtBeginning(head, 1);
    
    // Print the linked list
     printf("Linked List: ");
