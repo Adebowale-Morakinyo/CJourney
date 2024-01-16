@@ -123,6 +123,7 @@ int main() {
     
 
     // Free memory
+    freeList(head);
     
 
     return 0;
