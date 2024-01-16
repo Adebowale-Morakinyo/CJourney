@@ -115,9 +115,11 @@ int main() {
     
 
     // Delete a node
-    
+    head = deleteNode(head, 3);
 
     // Print the linked list
+    printf("Linked List after deletion: ");
+    printList(head);
     
 
     // Free memory
