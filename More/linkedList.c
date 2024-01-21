@@ -108,6 +108,7 @@ int main() {
     // Insert elements at the end
     head = insertAtEnd(head, 4);
     head = insertAtEnd(head, 5);
+    head = insertAtEnd(head, 6);
     
     // Print the linked list
     printf("Linked List: ");
