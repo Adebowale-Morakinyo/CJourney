@@ -29,3 +29,18 @@ struct TreeNode* createNode(int data) {
     newNode->left = newNode->right = NULL;
     return newNode;
 }
+
+// Function to insert a new node in the tree
+struct TreeNode* insertNode(struct TreeNode* root, int data) {
+    if (root == NULL) {
+        return createNode(data);
+    }
+
+    if (data < root->data) {
+        root->left = insertNode(root->left, data);
+    } else if (data > root->data) {
+        root->right = insertNode(root->right, data);
+    }
+
+    return root;
+}
