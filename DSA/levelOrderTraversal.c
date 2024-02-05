@@ -22,6 +22,18 @@ struct TreeNode {
     struct TreeNode *right;
 };
 
+// Define a structure for a queue node
+struct QueueNode {
+    struct TreeNode* data;
+    struct QueueNode* next;
+};
+
+// Define the structure for a queue
+struct Queue {
+    struct QueueNode* front;
+    struct QueueNode* rear;
+};
+
 // Function to create a new node
 struct TreeNode* createNode(int data) {
     struct TreeNode* newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
