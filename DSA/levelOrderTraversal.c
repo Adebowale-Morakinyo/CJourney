@@ -56,3 +56,18 @@ void enqueue(struct Queue* queue, struct TreeNode* node) {
     }
 }
 
+// Function to dequeue a tree node from the queue
+struct TreeNode* dequeue(struct Queue* queue) {
+    if (queue->front == NULL) {
+        return NULL;
+    }
+
+    struct QueueNode* temp = queue->front;
+    struct TreeNode* node = temp->data;
+
+    queue->front = temp->next;
+    free(temp);
+
+    return node;
+}
+
