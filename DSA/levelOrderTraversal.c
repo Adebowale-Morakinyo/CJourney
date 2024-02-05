@@ -42,17 +42,17 @@ struct TreeNode* createNode(int data) {
     return newNode;
 }
 
-// Function to insert a new node in the tree
-struct TreeNode* insertNode(struct TreeNode* root, int data) {
-    if (root == NULL) {
-        return createNode(data);
-    }
+// Function to enqueue a tree node in the queue
+void enqueue(struct Queue* queue, struct TreeNode* node) {
+    struct QueueNode* newNode = (struct QueueNode*)malloc(sizeof(struct QueueNode));
+    newNode->data = node;
+    newNode->next = NULL;
 
-    if (data < root->data) {
-        root->left = insertNode(root->left, data);
-    } else if (data > root->data) {
-        root->right = insertNode(root->right, data);
+    if (queue->front == NULL) {
+        queue->front = queue->rear = newNode;
+    } else {
+        queue->rear->next = newNode;
+        queue->rear = newNode;
     }
-
-    return root;
 }
+
