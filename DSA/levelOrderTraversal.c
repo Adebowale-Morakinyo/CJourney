@@ -71,3 +71,36 @@ struct TreeNode* dequeue(struct Queue* queue) {
     return node;
 }
 
+// Function to perform level order traversal of the tree
+void levelOrderTraversal(struct TreeNode* root) {
+    if (root == NULL) {
+        return;
+    }
+
+    // Create a queue for level order traversal
+    struct Queue* queue = (struct Queue*)malloc(sizeof(struct Queue));
+    queue->front = queue->rear = NULL;
+
+    // Enqueue the root
+    enqueue(queue, root);
+
+    while (queue->front != NULL) {
+        // Dequeue the front node
+        struct TreeNode* current = dequeue(queue);
+        printf("%d ", current->data);
+
+        // Enqueue the left child if it exists
+        if (current->left != NULL) {
+            enqueue(queue, current->left);
+        }
+
+        // Enqueue the right child if it exists
+        if (current->right != NULL) {
+            enqueue(queue, current->right);
+        }
+    }
+
+    // Free the queue
+    free(queue);
+}
+
