@@ -34,7 +34,7 @@ struct Queue {
     struct QueueNode* rear;
 };
 
-// Function to create a new node
+// Function to create a new tree node
 struct TreeNode* createNode(int data) {
     struct TreeNode* newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
     newNode->data = data;
@@ -118,4 +118,3 @@ int main() {
 
     return 0;
 }
-
