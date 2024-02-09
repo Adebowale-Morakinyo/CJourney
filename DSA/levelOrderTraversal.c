@@ -104,3 +104,18 @@ void levelOrderTraversal(struct TreeNode* root) {
     free(queue);
 }
 
+int main() {
+    // Create the sample binary tree
+    struct TreeNode* root = createNode(3);
+    root->left = createNode(9);
+    root->right = createNode(20);
+    root->right->left = createNode(15);
+    root->right->right = createNode(7);
+
+    // Perform level order traversal
+    printf("Level Order Traversal: ");
+    levelOrderTraversal(root);
+
+    return 0;
+}
+
