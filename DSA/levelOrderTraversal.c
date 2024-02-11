@@ -115,7 +115,7 @@ int main() {
     // Perform level order traversal
     printf("Level Order Traversal: ");
     levelOrderTraversal(root);
-    printf("/n");
+    printf("\n");
 
     return 0;
 }
